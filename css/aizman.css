@@ -1,0 +1,23 @@
+.narrow-block {
+    width: 60%; /* Уменьшение ширины до 60% от контейнера */
+    max-width: 700px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование блока */
+}
+.narrow-block {
+    padding: 20px 40px; /* Добавление отступов сверху и по бокам */
+}
+@media (max-width: 768px) {
+    .narrow-block {
+        width: 90%; /* Увеличение ширины на мобильных устройствах */
+    }
+}
+.narrow-block h3 {
+    text-align: center; /* Центрирование заголовка */
+    font-size: 24px; /* Увеличение размера шрифта */
+}
+.narrow-block p, .narrow-block h6 {
+    font-size: 16px; /* Настройка размера текста */
+    line-height: 1.6; /* Увеличение межстрочного расстояния */
+}
+
+
