@@ -1,23 +1,52 @@
-.narrow-block {
-    width: 60%; /* Уменьшение ширины до 60% от контейнера */
-    max-width: 700px; /* Максимальная ширина */
-    margin: 0 auto; /* Центрирование блока */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
 }
-.narrow-block {
-    padding: 20px 40px; /* Добавление отступов сверху и по бокам */
+
+.navbar-brand {
+    display: block;
+    width: 150px; /* Pevná šírka pre logo */
+    height: 80px; /* Pevná výška */
+    background: url('../img/dina-dent.png') no-repeat center center;
+
+
+    background-size: contain;
 }
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.narrow-block {
+    width: 60%;
+    max-width: 800px; /* Zvýšená maximálna šírka */
+    margin: 0 auto;
+    padding: 30px 50px; /* Zvýšené okraje */
+}
+
 @media (max-width: 768px) {
     .narrow-block {
-        width: 90%; /* Увеличение ширины на мобильных устройствах */
+        width: 90%;
     }
 }
+
 .narrow-block h3 {
-    text-align: center; /* Центрирование заголовка */
-    font-size: 24px; /* Увеличение размера шрифта */
+    text-align: center;
+    font-size: 28px;
 }
+
 .narrow-block p, .narrow-block h6 {
-    font-size: 16px; /* Настройка размера текста */
-    line-height: 1.6; /* Увеличение межстрочного расстояния */
+    font-size: 20px;
+    line-height: 2.0;
 }
 
 
