@@ -6,12 +6,11 @@
 
 .navbar-brand {
     display: block;
-    width: 150px; /* Pevná šírka pre logo */
-    height: 80px; /* Pevná výška */
+    width: 200px; /* Увеличена ширина логотипа */
+    height: 100px; /* Увеличена высота логотипа */
     background: url('../img/dina-dent.png') no-repeat center center;
-
-
     background-size: contain;
+    margin-top: -10px; /* Поднятие логотипа выше */
 }
 
 .navbar-nav .nav-link {
@@ -28,9 +27,9 @@
 
 .narrow-block {
     width: 60%;
-    max-width: 800px; /* Zvýšená maximálna šírka */
+    max-width: 800px;
     margin: 0 auto;
-    padding: 30px 50px; /* Zvýšené okraje */
+    padding: 30px 50px;
 }
 
 @media (max-width: 768px) {
@@ -47,6 +46,16 @@
 .narrow-block p, .narrow-block h6 {
     font-size: 20px;
     line-height: 2.0;
+}
+
+@media (max-width: 768px) {
+    .col-xl-4, .col-lg-12 {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 300px; /* Знижение высоты карты на мобильных устройствах */
+    }
 }
 
 
