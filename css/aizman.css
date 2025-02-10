@@ -1,17 +1,29 @@
 .navbar {
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #0077b6; /* Цвет полосы (изменяемый) */
     padding: 15px 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
     display: block;
-    width: 200px; /* Увеличена ширина логотипа */
-    height: 100px; /* Увеличена высота логотипа */
+    width: 200px;
+    height: 100px;
     background: url('../img/dina-dent.png') no-repeat center center;
     background-size: contain;
-    margin-top: -10px; /* Поднятие логотипа выше */
+    position: relative;
 }
+
+.navbar-nav .nav-link {
+    color: white; /* Белый цвет текста для контраста */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Желтый при наведении */
+}
+
 
 .navbar-nav .nav-link {
     color: #333;
