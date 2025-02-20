@@ -36,34 +36,41 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-dark m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-secondary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
     </div>
-    <!-- Spinner End -->
+    <div class="language-switcher">
+        <button id="skBtn" class="btn">Slovenčina</button>
+        <button id="ruBtn" class="btn">Русский</button>
+        <button id="ukBtn" class="btn">Українська</button>
+        <button id="enBtn" class="btn">English</button>
+    </div>
+    <!-- Spinner Koniec -->
 
 
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Otváracie hodiny: Pon - Ut: 6.00 - 22.00, Nedeľa zatvorené</small>
-                </div>
+
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
                         <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
                     </div>
-
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+421 948 771 75</p>
+                        <p class="m-0">
+                            <i class="fa fa-phone-alt me-2"></i>
+                            <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
+                        </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -130,37 +137,23 @@
     <!-- Hero End -->
 
 
-    <!-- Team Start -->
     <div class="container-fluid py-5">
         <div class="container">
-            <div class="row g-5">
-
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 wow slideInUp text-center" data-wow-delay="0.3s">
                     <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/dinara.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
+                        <div class="image-container">
+                            <img class="img-fluid rounded-circle" src="img/img_10.png" alt="Dr. Dina Bruso">
                         </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dinara Bruso</h4>
-                            <p class="text-primary mb-0">Zubarka</p>
+                        <div class="team-text bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Dr. Dinara Bruso</h4>
+                            <p class="text-primary mb-0">Zubárka</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->
 
 
 
@@ -192,16 +185,40 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Kontaktujte nás</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Dinadent2022@gmail.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+421 948 771 75</p>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        A2-B, 2 poschodia, Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <a href="mailto:Dinadent2022@gmail.com" class="text-white text-decoration-none">Dinadent2022@gmail.com</a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <a href="tel:+421948771757" class="text-white text-decoration-none">+421 948 771 757</a>
+                    </p>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Sledujte nás</h3>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank">
+                            <i class="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank">
+                            <i class="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://t.me/+421948771757" target="_blank">
+                            <i class="fab fa-telegram-plane fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="viber://chat?number=%2B421948771757">
+                            <i class="fab fa-viber fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://wa.me/421948771757" target="_blank">
+                            <i class="fab fa-whatsapp fw-normal"></i>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>

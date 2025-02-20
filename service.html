@@ -36,34 +36,41 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-dark m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-secondary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
     </div>
-    <!-- Spinner End -->
+    <div class="language-switcher">
+        <button id="skBtn" class="btn">Slovenčina</button>
+        <button id="ruBtn" class="btn">Русский</button>
+        <button id="ukBtn" class="btn">Українська</button>
+        <button id="enBtn" class="btn">English</button>
+    </div>
+    <!-- Spinner Koniec -->
 
 
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Otváracie hodiny: Pon - Ut: 6.00 - 22.00, Nedeľa zatvorené</small>
-                </div>
+
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
                         <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
                     </div>
-
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+421 948 771 75</p>
+                        <p class="m-0">
+                            <i class="fa fa-phone-alt me-2"></i>
+                            <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
+                        </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -95,6 +102,16 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Služby</h1>
+                <a href="" class="h4 text-white">Domov</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Služby</a>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Full Screen Search Start -->
@@ -116,58 +133,91 @@
     <!-- Full Screen Search End -->
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 hero-header mb-5">
-        <div class="row py-3">
-            <div class="col-12 text-center">
-                <h1 class="display-3 text-white animated zoomIn">Služby</h1>
-                <a href="" class="h4 text-white">Domov</a>
-                <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Služby</a>
-            </div>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fas fa-child service-icon"></i>
+            <h3>𝑫𝒆𝒕𝒔𝒌á 𝒔𝒕𝒐𝒎𝒂𝒕𝒐𝒍ó𝒈𝒊𝒂</h3>
+            <ul>
+                <li>Rozprávkové interiéry</li>
+                <li>Hračky ako darček</li>
+                <li>Ošetrenie v spánku</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-tooth service-icon"></i>
+            <h3>𝑯𝒚𝒈𝒊𝒆𝒏𝒂 𝒂 𝒑𝒓𝒆𝒗𝒆𝒏𝒄𝒊𝒂</h3>
+            <ul>
+                <li>Stomatologický Check-Up</li>
+                <li>Fluorizácia zubov</li>
+                <li>Hygienické indikátory</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-smile service-icon"></i>
+            <h3>𝑬𝒔𝒕𝒆𝒕𝒊𝒄𝒌á 𝒔𝒕𝒐𝒎𝒂𝒕𝒐𝒍ó𝒈𝒊𝒂</h3>
+            <ul>
+                <li>Bielenie zubov</li>
+                <li>Keramické fazety</li>
+                <li>Kozmetická úprava úsmevu</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-user-md service-icon"></i>
+            <h3>𝑷𝒓𝒐𝒕𝒆𝒕𝒊𝒌𝒂</h3>
+            <ul>
+                <li>Excízia mäkkých tkanív</li>
+                <li>Odtlačky alginat</li>
+
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-syringe service-icon"></i>
+            <h3>𝑪𝒉𝒊𝒓𝒖𝒓𝒈𝒊𝒂</h3>
+            <ul>
+                <li>Extrakcia zubov</li>
+                <li>Implantácia</li>
+                <li>Sinus-lifting</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-heart service-icon"></i>
+            <h3>𝑻𝒆𝒓𝒂𝒑𝒊𝒂</h3>
+            <ul>
+                <li>Obnova zubov</li>
+                <li>Liečenie kazu</li>
+                <li>Ošetrenie kanálikov</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-lungs service-icon"></i>
+            <h3>𝑫𝒊𝒂𝒈𝒏𝒐𝒔𝒕𝒊𝒌𝒂</h3>
+            <ul>
+                <li>Röntgen zubov</li>
+                <li>CT sken</li>
+                <li>Digitálne odtlačky</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-briefcase-medical service-icon"></i>
+            <h3>𝑵Ú𝑫𝒁𝑶𝑽Á 𝑷𝑶𝑴𝑶𝑪</h3>
+            <ul>
+                <li>Vstup do ambulancie pre akútnu bolesť je len na objednávku.</li>
+
+            </ul>
         </div>
     </div>
-    <!-- Hero End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5 mb-5">
 
-                <div class="col-lg-7">
-                    <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Naše služby</h5>
-                        <h1 class="display-5 mb-0">Ponúkame najlepšiu kvalitu zubných služieb</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Kosmetická stomatológia</h5>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-7">
-                    <div class="row g-5">
 
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Bielenie zubov</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Service End -->
 
     
@@ -203,16 +253,40 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Kontaktujte nás</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Dinadent2022@gmail.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+421 948 771 75</p>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        A2-B, 2 poschodia, Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <a href="mailto:Dinadent2022@gmail.com" class="text-white text-decoration-none">Dinadent2022@gmail.com</a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <a href="tel:+421948771757" class="text-white text-decoration-none">+421 948 771 757</a>
+                    </p>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Sledujte nás</h3>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank">
+                            <i class="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank">
+                            <i class="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://t.me/+421948771757" target="_blank">
+                            <i class="fab fa-telegram-plane fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="viber://chat?number=%2B421948771757">
+                            <i class="fab fa-viber fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://wa.me/421948771757" target="_blank">
+                            <i class="fab fa-whatsapp fw-normal"></i>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>

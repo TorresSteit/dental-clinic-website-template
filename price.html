@@ -36,34 +36,41 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-dark m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
         <div class="spinner-grow text-secondary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Načítava sa...</span>
         </div>
     </div>
-    <!-- Spinner End -->
+    <div class="language-switcher">
+        <button id="skBtn" class="btn">Slovenčina</button>
+        <button id="ruBtn" class="btn">Русский</button>
+        <button id="ukBtn" class="btn">Українська</button>
+        <button id="enBtn" class="btn">English</button>
+    </div>
+    <!-- Spinner Koniec -->
 
 
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Otváracie hodiny: Pon - Ut: 6.00 - 22.00, Nedeľa zatvorené</small>
-                </div>
+
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
                         <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
                     </div>
-
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+421 948 771 75</p>
+                        <p class="m-0">
+                            <i class="fa fa-phone-alt me-2"></i>
+                            <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
+                        </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -98,6 +105,7 @@
 
 
     <!-- Full Screen Search Start -->
+
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
@@ -127,65 +135,132 @@
             </div>
         </div>
     </div>
-    <!-- Hero End -->
+    <!-- Full Screen Search End -->
 
 
-    <!-- Pricing Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img.png" alt="">
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_2.png" alt="">
-                            </div>
-                        </div>
-                        <!-- Новые фотографии -->
-
-
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_4.png" alt="New Image 4">
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_5.png" alt="New Image 5">
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_6.png" alt="New Image 6">
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/img_7.png" alt="New Image 7">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Start -->
+    <div class="price-container">
+        <h1 class="price-heading">𝓩𝓪𝓬𝓱𝓸𝓿𝓷𝓪 𝓼𝓽𝓸𝓶𝓪𝓽𝓸𝓵𝓰𝓲𝓪	</h1>
+        <ul class="price-list">
+            <li><span>Vstupná preventívna prehliadka</span> <span class="price">30 €</span></li>
+            <li><span>Odborná konzultácia</span> <span class="price">30 €</span></li>
+            <li><span>Vyšetrenie na fokus</span> <span class="price">30 €</span></li>
+            <li><span>Podanie injekčnej anestézie (2× a viac)</span> <span class="price">30 €</span></li>
+            <li><span>Gél pri aplikačnej anestézii</span> <span class="price">5 €</span></li>
+            <li><span>Prvá pomoc mimo ordinačných hodín</span> <span class="price">65 €</span></li>
+            <li><span>Akútne ošetrenie cudzieho pacienta</span> <span class="price">15 €</span></li>
+            <li><span>Neohlásená neúčasť na ošetrení vopred</span> <span class="price">25 €</span></li>
+            <li><span>Jednoplošková výplň (distálny úsek)</span> <span class="price">60 €</span></li>
+            <li><span>Dvojplošková výplň (distálny úsek)</span> <span class="price">75 €</span></li>
+            <li><span>Trojplošková výplň (distálny úsek)</span> <span class="price">85 €</span></li>
+            <li><span>Jednoplošková výplň (frontálny úsek)</span> <span class="price">70 €</span></li>
+            <li><span>Dvojplošková výplň (frontálny úsek)</span> <span class="price">75 €</span></li>
+            <li><span>Trojplošková výplň (frontálny úsek)</span> <span class="price">85 €</span></li>
+            <li><span>Priama rekonštrukcia zuba</span> <span class="price">95 €</span></li>
+            <li><span>Fotokompozitné fazety</span> <span class="price">100 €</span></li>
+            <li><span>Výplňové materiály Fuji</span> <span class="price">35 €</span></li>
+            <li><span>Pečatenie zubov (1 zub)</span> <span class="price">15 €</span></li>
+            <li><span>RVG intraorálny snímok (5 snímkov)</span> <span class="price">20 €</span></li>
+            <li><span>Dlahovanie (1 zub)</span> <span class="price">10 €</span></li>
+            <li><span>Kofferdam</span> <span class="price">20 €</span></li>
+            <li><span>Optragate</span> <span class="price">15 €</span></li>
+            <li><span>MTA, Fuji, Calcimol, SDR, EverX</span> <span class="price">20 €</span></li>
+        </ul>
+        <div class="price-container">
+            <h1 class="price-heading">ℰ𝓃𝒹𝑜𝒹𝑜𝓃𝓉𝒾𝒸𝓀é 𝑜š𝑒𝓉𝓇𝑒𝓃𝒾𝑒 𝓀𝑜𝓇𝑒ň𝑜𝓋ý𝒸𝒽 𝓀𝒶𝓃á𝓁𝒾𝓀𝑜𝓋	</h1>
+            <ul class="price-list">
+                <li><span>Depulpin, Cavit</span> <span class="price">20 €</span></li>
+                <li><span>Dostavba</span> <span class="price">30 €</span></li>
+                <li><span>Trepanacia koreňových kanálikov</span> <span class="price">40 €</span></li>
+                <li><span>Endodontický vyplachový protokol</span> <span class="price">15 €</span></li>
+                <li><span>Zavedenie čapu zo sklenených vlákien</span> <span class="price">40 € (kus)</span></li>
+                <li><span>Odstránenie starej koreňovej výplne 1kk</span> <span class="price">45 €</span></li>
+                <li><span>Odstránenie starej koreňovej výplne viac kk</span> <span class="price">60 €</span></li>
+                <li><span>Endodontické ošetrenie rucne/strojove: koreňová výplň - jednokoreňový zub</span> <span class="price">75 €</span></li>
+                <li><span>Endodontické ošetrenie rucne/strojove: koreňová výplň - viackoreňový zub</span> <span class="price">145 €</span></li>
+                <li><span>Endodontické ošetrenie 4/5 kanálikov</span> <span class="price">60 €</span></li>
+                <li><span>Endodontické bielenie 1 zub</span> <span class="price">50 €</span></li>
+            </ul>
         </div>
+        <div class="price-container">
+            <h1 class="price-heading">𝒮𝓉𝑜𝓂𝒶𝓉𝑜𝓁𝑜𝑔𝒾𝒸𝓀á 𝒸𝒽𝒾𝓇𝓊𝓇𝑔𝒾𝒶</h1>
+            <ul class="price-list">
+                <li><span>Ošetrenie stážneho prerezávania</span> <span class="price">30 €</span></li>
+                <li><span>Extrakcia trhanie mliečneho zuba</span> <span class="price">30 €</span></li>
+                <li><span>Extrakcia trhanie trvalého jednokoreňového zuba</span> <span class="price">60 €</span></li>
+                <li><span>Extrakcia trhanie trvalého viackoreňového zuba</span> <span class="price">80 €</span></li>
+                <li><span>Neplánovaná chirurgická extrakcia trvalého alebo dočasného zuba</span> <span class="price">85 €</span></li>
+                <li><span>Komplikovaná extrakcia</span> <span class="price">85 €</span></li>
+                <li><span>Chirurgická extrakcia zuba múdrosti</span> <span class="price">85–150 €</span></li>
+                <li><span>Odborná chirurgická konzultácia pred zákrokom</span> <span class="price">30 €</span></li>
+                <li><span>Resekcia koreňového hrotu</span> <span class="price">200 €</span></li>
+                <li><span>Resekcia každého ďalšieho koreňa</span> <span class="price">70 €</span></li>
+                <li><span>Chirurgická revízia rany alveolitída</span> <span class="price">20 €</span></li>
+                <li><span>Gelatamp</span> <span class="price">5 €</span></li>
+                <li><span>Alveogel</span> <span class="price">5 €</span></li>
+                <li><span>Sutura extrakčnej rany</span> <span class="price">30 €</span></li>
+                <li><span>Excízia mäkkých tkanív</span> <span class="price">95 €</span></li>
+            </ul>
+        </div>
+        <div class="price-container">
+            <h1 class="price-heading">𝒫𝓇𝑜𝓉𝑒𝓉𝒾𝓀𝒶</h1>
+            <ul class="price-list">
+                <li><span>Odtlačky alginát</span> <span class="price">20 €</span></li>
+                <li><span>Odtlačky silikónové</span> <span class="price">25 €</span></li>
+                <li><span>Záhryz silikónový</span> <span class="price">15 €</span></li>
+                <li><span>Odtlačky na individuálnu lyžicu</span> <span class="price">20 €</span></li>
+                <li><span>Opätovné nacementovanie korunky</span> <span class="price">15 €</span></li>
+                <li><span>Nasadenie korunky na trvalý cement</span> <span class="price">10 €</span></li>
+                <li><span>Sťahovanie koruniek</span> <span class="price">20 €/1 zub</span></li>
+                <li><span>Dočasná korunka (ambulantne vyhotovená)</span> <span class="price">25 €</span></li>
+                <li><span>Dočasná korunka (laboratórne vyhotovená)</span> <span class="price">35 €</span></li>
+                <li><span>Kovokeramická korunka</span> <span class="price">280 €</span></li>
+                <li><span>Korunka zirkón monolitická</span> <span class="price">350 €</span></li>
+                <li><span>Korunka EMAX</span> <span class="price">370 €</span></li>
+                <li><span>Korunka zirkón vrstvená</span> <span class="price">370 €</span></li>
+                <li><span>Snímateľná živicová celková náhrada</span> <span class="price">320 €</span></li>
+                <li><span>Čiastočná živicová snímateľná náhrada</span> <span class="price">320 €</span></li>
+                <li><span>Flexi čiastočná snímateľná náhrada</span> <span class="price">450 €</span></li>
+                <li><span>Čiastočná snímateľná náhrada skelet</span> <span class="price">800 €</span></li>
+                <li><span>Oprava snímateľnej náhrady</span> <span class="price">50 €</span></li>
+                <li><span>Doplnenie jedného zuba do náhrady</span> <span class="price">50 €</span></li>
+                <li><span>Rebazácia</span> <span class="price">120 €</span></li>
+                <li><span>Nahryzová dlahá (proti bruxizmu)</span> <span class="price">130 €</span></li>
+                <li><span>Obrúsenie 1 zuba</span> <span class="price">10 €</span></li>
+                <li><span>Medzerník flexi do 2 zubov</span> <span class="price">220 €</span></li>
+                <li><span>Inlay koreňový čap</span> <span class="price">60 €</span></li>
+            </ul>
+        </div>
+        <div class="price-container">
+            <h1 class="price-heading">𝑀𝑒𝑧𝑜𝑡𝑒𝑟𝑎𝑝𝑖𝑎 𝑝𝑜𝑑á𝑣𝑎𝑛á 𝑖𝑛𝑗𝑒𝑘č𝑛𝑒</h1>
+            <ul class="price-list">
+                <li><span>1ml kyseliny hyalurónovej</span> <span class="price">250 €</span></li>
+                <li><span>2ml kyseliny hyalurónovej</span> <span class="price">400 €</span></li>
+                <li><span>3ml kyseliny hyalurónovej</span> <span class="price">500 €</span></li>
+            </ul>
+        </div>
+        <div class="price-container">
+            <h1 class="price-heading">𝒟𝑒𝓃𝓉á𝓁𝓃𝒶 𝒽𝓎𝑔𝒾𝑒𝓃𝒶</h1>
+            <ul class="price-list">
+                <li><span>Inštruktáž a nácvik správnej ústnej hygieny</span> <span class="price">20 €</span></li>
+                <li><span>Čistenie zubného kameňa ultrazvukom</span> <span class="price">20 €</span></li>
+                <li><span>AIRFLOW</span> <span class="price">25 €</span></li>
+                <li><span>Fluoridácia u dospelého (obidve zuboradia)</span> <span class="price">60 €</span></li>
+                <li><span>Detská dentálna hygiena</span> <span class="price">40 €</span></li>
+                <li><span>Dentálna hygiena poučenie, čistenie UOZK, Airflow</span> <span class="price">65 €</span></li>
+                <li><span>Vypísanie tlačiva pre ZP na žiadosť pacienta</span> <span class="price">20 €</span></li>
+                <li><span>Bielenie zubov</span> <span class="price">370 €</span></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
     </div>
-
-    <!-- Pricing End -->
-    
-
-
-    <!-- Newsletter End -->
-
 
 
     <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
@@ -213,16 +288,40 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Kontaktujte nás</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Dinadent2022@gmail.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+421 948 771 75</p>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        A2-B, 2 poschodia, Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <a href="mailto:Dinadent2022@gmail.com" class="text-white text-decoration-none">Dinadent2022@gmail.com</a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <a href="tel:+421948771757" class="text-white text-decoration-none">+421 948 771 757</a>
+                    </p>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Sledujte nás</h3>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank">
+                            <i class="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/dinadent_trnava?igsh=ZGcxMGpta216c3Fn" target="_blank">
+                            <i class="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://t.me/+421948771757" target="_blank">
+                            <i class="fab fa-telegram-plane fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="viber://chat?number=%2B421948771757">
+                            <i class="fab fa-viber fw-normal"></i>
+                        </a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://wa.me/421948771757" target="_blank">
+                            <i class="fab fa-whatsapp fw-normal"></i>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>

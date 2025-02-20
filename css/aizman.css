@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 .navbar {
     background-color: #0077b6; /* Цвет полосы (изменяемый) */
     padding: 15px 40px;
@@ -69,5 +71,202 @@
         height: 300px; /* Знижение высоты карты на мобильных устройствах */
     }
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.price-container {
+    font-family: "Poppins", sans-serif; /* Стильный и современный шрифт */
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px; /* Отступ перед футером */
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600; /* Чуть толще заголовок */
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.section-title img {
+    width: 30px;
+    height: 30px;
+}
+
+.price-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: "Times New Roman", serif;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .price-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .price-list li {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Всегда 4 карточки в ряд */
+    gap: 20px;
+    width: 100vw; /* Растягиваем на всю ширину экрана */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Карточка услуги */
+.service-card {
+    background: white;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Иконка */
+.service-icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Заголовок */
+.service-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Список услуг */
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.service-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .services-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на средних экранах */
+    }
+}
+
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 колонка на телефонах */
+    }
+}
+
+.image-container {
+    width: 250px; /* Размер фото */
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%; /* Делаем фото круглым */
+    margin: 0 auto; /* Центрируем */
+    border: 5px solid #fff; /* Белая рамка */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.narrow-block {
+    margin-top: 40px;
+}
+
 
 
