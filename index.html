@@ -135,7 +135,7 @@
                     <div class="p-3" style="max-width: 900px;">
 
                         <h1 class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
-                        <a href="tel:+421 948 771 75" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
+                        <a href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
                             Zavolajte nám
                         </a>
 
@@ -148,7 +148,7 @@
                     <div class="p-3" style="max-width: 900px;">
 
                         <h1 class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
-                        <a href="tel:+421 948 771 75" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
+                        <a href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
                             Zavolajte nám
                         </a>
                     </div>
@@ -172,36 +172,37 @@
 
     <!-- Banner Start -->
 <div class="bg-primary d-flex flex-column narrow-block">
-    <h3 class="text-white mb-3">Otváracie hodiny</h3>
+    <h3 class="text-white mb-3" data-translate="opening_hours"></h3>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Pondelok</h6>
-        <p class="mb-0">8:00 - 15-00</p>
+        <h6 class="text-white mb-0" data-translate="monday"></h6>
+        <p class="mb-0" data-translate="monday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Utorok</h6>
-        <p class="mb-0">12:00 - 20:00</p>
+        <h6 class="text-white mb-0" data-translate="tuesday"></h6>
+        <p class="mb-0" data-translate="tuesday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-         <h6 class="text-white mb-0">Streda</h6>
-        <p class="mb-0">8:00 - 15:00</p>
+        <h6 class="text-white mb-0" data-translate="wednesday"></h6>
+        <p class="mb-0" data-translate="wednesday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Ctvrotok</h6>
-        <p class="mb-0">12:00 - 20:00</p>
+        <h6 class="text-white mb-0" data-translate="thursday"></h6>
+        <p class="mb-0" data-translate="thursday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Piatok</h6>
-        <p class="mb-0">8:00 - 15:00</p>
+        <h6 class="text-white mb-0" data-translate="friday"></h6>
+        <p class="mb-0" data-translate="friday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Sobota</h6>
-        <p class="mb-0">Na objednavku</p>
+        <h6 class="text-white mb-0" data-translate="saturday"></h6>
+        <p class="mb-0" data-translate="saturday_hours"></p>
     </div>
     <div class="d-flex justify-content-between text-white mb-3">
-        <h6 class="text-white mb-0">Nedeľa</h6>
-        <p class="mb-0">Nepracujem</p>
+        <h6 class="text-white mb-0" data-translate="sunday"></h6>
+        <p class="mb-0" data-translate="sunday_hours"></p>
     </div>
 </div>
+
 
 <!-- Banner Start -->
 
@@ -209,80 +210,79 @@
 <div class="services-container">
     <div class="service-card">
         <i class="fas fa-child service-icon"></i>
-        <h3>Detská stomatológia</h3>
+        <h3 id="titlechild">𝑫𝒆𝒕𝒔𝒌á 𝒔𝒕𝒐𝒎𝒂𝒕𝒐𝒍ó𝒈𝒊𝒂</h3>
         <ul>
-            <li>Rozprávkové interiéry</li>
-            <li>Hračky ako darček</li>
-            <li>Ošetrenie v spánku</li>
+            <li id="listchild1">Rozpra  vky počas osetrenia</li>
+            <li id="listchild2">Darčeky a diplomy</li>
+            <li id="listchild3">Osetrenie v spánku</li>
         </ul>
     </div>
 
     <div class="service-card">
         <i class="fas fa-tooth service-icon"></i>
-        <h3>Hygiena a prevencia</h3>
+        <h4 id="titlegigenia">𝑯𝒚𝒈𝒊𝒆𝒏𝒂 𝒂 𝒑𝒓𝒆𝒗𝒆𝒏𝒄𝒊𝒂</h4>
         <ul>
-            <li>Stomatologický Check-Up</li>
-            <li>Fluorizácia zubov</li>
-            <li>Hygienické indikátory</li>
+            <li id="listgigenia1">Stomatologický Check-Up</li>
+            <li id="listgigenia2">Fluorizácia zubov</li>
+            <li id="listgigenia3">Hygienické indikátory</li>
         </ul>
     </div>
+
 
     <div class="service-card">
         <i class="fas fa-smile service-icon"></i>
-        <h3>Estetická stomatológia</h3>
+        <h4 id="titlemezoterapia">𝑀𝑒𝑧𝑜𝑡𝑒𝑟𝑎𝑝𝑖𝑎 𝑝𝑜𝑑á𝑣𝑎𝑛á 𝑖𝑛𝑗𝑒𝑘č𝑛𝑒</h4>
         <ul>
-            <li>Bielenie zubov</li>
-            <li>Keramické fazety</li>
-            <li>Kozmetická úprava úsmevu</li>
+            <li id="listmezoterapia1">1ml kyseliny hyaluronovej</li>
+            <li id="listmezoterapia2">2ml kyseliny hyaluronovej</li>
+            <li id="listmezoterapia3">3ml kyseliny hyaluronovej</li>
         </ul>
     </div>
+
 
     <div class="service-card">
         <i class="fas fa-user-md service-icon"></i>
-        <h3>protetika</h3>
+        <h4 id="titleprotetika">𝑷𝒓𝒐𝒕𝒆𝒕𝒊𝒌𝒂</h4>
         <ul>
-            <li>Excízia mäkkých tkanív</li>
-            <li>Odtlačky alginat</li>
-
+            <li id="listprotetika1">Stomatologicky check up</li>
+            <li id="listprotetika2">Fluoridacia a bielenie zubov</li>
+            <li id="listprotetika3">Dentalna hygiena a prevencia kazu</li>
+            <li id="listprotetika4">Zirkonove a kerwmicke korunky</li>
         </ul>
     </div>
-
     <div class="service-card">
         <i class="fas fa-syringe service-icon"></i>
-        <h3>Chirurgia</h3>
+        <h7 id="titlechirgia">𝑪𝒉𝒊𝒓𝒖𝒓𝒈𝒊𝒂</h7>
         <ul>
-            <li>Extrakcia zubov</li>
-            <li>Implantácia</li>
-            <li>Sinus-lifting</li>
+            <li id="listchirgia1">Extrakcia trhanie mliečneho zuba</li>
+            <li id="listchirgia2">Extrakcia trhanie trvalého jednokoreňového zuba</li>
+            <li>Extrakcia trhanie trvalého viackoreňového zuba</li>
         </ul>
     </div>
 
     <div class="service-card">
         <i class="fas fa-heart service-icon"></i>
-        <h3>Terapia</h3>
+        <h8 id="titleterpia">𝑻𝒆𝒓𝒂𝒑𝒊𝒂</h8>
         <ul>
-            <li>Obnova zubov</li>
-            <li>Liečenie kazu</li>
-            <li>Ošetrenie kanálikov</li>
+            <li id="listterpia1">Prevencia kazu</li>
+            <li id="listterpia2">Osetrenie zubov a sliznice</li>
+            <li id="listterpia3">Osetrenie korenovych kanalikov</li>
         </ul>
     </div>
 
     <div class="service-card">
         <i class="fas fa-lungs service-icon"></i>
-        <h3>Diagnostika</h3>
+        <h9>𝑫𝒊𝒂𝒈𝒏𝒐𝒔𝒕𝒊𝒌𝒂</h9>
         <ul>
-            <li>Röntgen zubov</li>
-            <li>CT sken</li>
-            <li>Digitálne odtlačky</li>
+            <li>Intraoralny röntgen</li>
         </ul>
     </div>
 
     <div class="service-card">
         <i class="fas fa-briefcase-medical service-icon"></i>
-        <h3>NÚDZOVÁ POMOC</h3>
+        <h10>𝑵Ú𝑫𝒁𝑶𝑽Á 𝑷𝑶𝑴𝑶𝑪</h10>
         <ul>
-            <li>Vstup do ambulancie pre akútnu bolesť je len na objednávku.</li>
-
+            <li>Akutne a bolestivé pripady osetrujeme po telefonickom dohodnutí</li>
         </ul>
     </div>
 </div>
@@ -339,8 +339,8 @@
 <div class="container-fluid py-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-4 wow slideInUp text-center" data-wow-delay="0.3s">
-                <div class="team-item">
+            <div class="col-lg-4 text-center">
+                <div class="team-item" data-bs-toggle="modal" data-bs-target="#dentistModal">
                     <div class="image-container">
                         <img class="img-fluid rounded-circle" src="img/img_10.png" alt="Dr. Dina Bruso">
                     </div>
@@ -349,6 +349,99 @@
                         <p class="text-primary mb-0">Zubárka</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="dentistModal" tabindex="-1" aria-labelledby="dentistModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dentistModalLabel">Dr. Dinara Bruso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>🦷 Prax:</strong> 10 rokov</p>
+
+                <p><strong>📜 Vzdelanie:</strong></p>
+                <ul>
+                    <li>2005 – ukončenie strednej školy</li>
+                    <li>2007 – ukončenie štúdia zubného technika</li>
+                    <li>2012 – diplom z terapeutickej stomatológie (<strong>Užhorodská národná univerzita</strong>)</li>
+                    <li>2022 – špecializácia v dentoalveolárnej chirurgii (<strong>Univerzita Pavla Jozefa Šafárika v Košiciach</strong>)</li>
+                </ul>
+
+                <p><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
+                <ul>
+                    <li>🦷 Moderné technológie a inovatívne metódy liečby</li>
+                    <li>👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
+                    <li>💉 Bezbolestné a komfortné zákroky</li>
+                    <li>🏅 Viac ako 10 rokov skúseností v stomatológii</li>
+                </ul>
+
+                <p><strong>🏆 Certifikáty a odborné školenia:</strong></p>
+                <div class="cert-carousel">
+                    <div class="cert-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#certModal1">
+                            <img src="certificate1_small.jpg" alt="Certifikát 1">
+                        </a>
+                    </div>
+                    <div class="cert-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#certModal2">
+                            <img src="certificate2_small.jpg" alt="Certifikát 2">
+                        </a>
+                    </div>
+                    <div class="cert-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#certModal3">
+                            <img src="certificate3_small.jpg" alt="Certifikát 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Модальные окна для полноразмерных сертификатов -->
+<div class="modal fade" id="certModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Certifikát 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/img_11.png" class="img-fluid" alt="Certifikát 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Certifikát 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="certificate2_large.jpg" class="img-fluid" alt="Certifikát 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Certifikát 3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="certificate3_large.jpg" class="img-fluid" alt="Certifikát 3">
             </div>
         </div>
     </div>

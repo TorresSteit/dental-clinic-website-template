@@ -18,6 +18,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -140,8 +141,8 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 wow slideInUp text-center" data-wow-delay="0.3s">
-                    <div class="team-item">
+                <div class="col-lg-4 text-center">
+                    <div class="team-item" data-bs-toggle="modal" data-bs-target="#dentistModal">
                         <div class="image-container">
                             <img class="img-fluid rounded-circle" src="img/img_10.png" alt="Dr. Dina Bruso">
                         </div>
@@ -154,6 +155,103 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="dentistModal" tabindex="-1" aria-labelledby="dentistModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dentistModalLabel">Dr. Dinara Bruso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>🦷 Prax:</strong> 10 rokov</p>
+
+                    <p><strong>📜 Vzdelanie:</strong></p>
+                    <ul>
+                        <li>2005 – ukončenie strednej školy</li>
+                        <li>2007 – ukončenie štúdia zubného technika</li>
+                        <li>2012 – diplom z terapeutickej stomatológie (<strong>Užhorodská národná univerzita</strong>)</li>
+                        <li>2022 – špecializácia v dentoalveolárnej chirurgii (<strong>Univerzita Pavla Jozefa Šafárika v Košiciach</strong>)</li>
+                    </ul>
+
+                    <p><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
+                    <ul>
+                        <li>🦷 Moderné technológie a inovatívne metódy liečby</li>
+                        <li>👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
+                        <li>💉 Bezbolestné a komfortné zákroky</li>
+                        <li>🏅 Viac ako 10 rokov skúseností v stomatológii</li>
+                    </ul>
+
+                    <p><strong>🏆 Certifikáty a odborné školenia:</strong></p>
+                    <div class="cert-carousel">
+                        <div class="cert-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#certModal1">
+                                <img src="certificate1_small.jpg" alt="Certifikát 1">
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#certModal2">
+                                <img src="certificate2_small.jpg" alt="Certifikát 2">
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#certModal3">
+                                <img src="certificate3_small.jpg" alt="Certifikát 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Модальные окна для полноразмерных сертификатов -->
+    <div class="modal fade" id="certModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Certifikát 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/img_11.png" class="img-fluid" alt="Certifikát 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Certifikát 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="certificate2_large.jpg" class="img-fluid" alt="Certifikát 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Certifikát 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="certificate3_large.jpg" class="img-fluid" alt="Certifikát 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 

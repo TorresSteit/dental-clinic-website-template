@@ -267,6 +267,31 @@ body {
 .narrow-block {
     margin-top: 40px;
 }
+.cert-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+.cert-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.cert-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-item img:hover {
+    transform: scale(1.1);
+}
 
 
 
