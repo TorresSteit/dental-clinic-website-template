@@ -292,6 +292,113 @@ body {
 .cert-item img:hover {
     transform: scale(1.1);
 }
+/* CSS для плавной анимации текста */
+.testimonial-item p {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-item p.hidden {
+    opacity: 0;
+}
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Контейнер для шапки */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Элементы по краям */
+    align-items: center;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #f8f9fa; /* Фон как в оригинале */
+}
+
+/* Блок с языками */
+.language-switcher {
+    display: flex;
+    gap: 10px; /* Чуть больше расстояние между кнопками */
+    align-items: center;
+}
+
+/* Кнопки языков */
+.language-switcher .btn {
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    border: none;
+    padding: 5px 14px;
+    font-size: 14px;
+    border-radius: 15px; /* Чуть менее скругленные углы */
+    transition: all 0.3s ease;
+}
+
+.language-switcher .btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Блок контактов */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Увеличил расстояние */
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-switcher {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5px; /* Добавил отступ вниз */
+    }
+
+    .language-switcher .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
+h1#acute_patients1 {
+    font-size: 2.5rem; /* Или другой подходящий размер */
+}
+.services-container h3,
+.services-container h4,
+.services-container h7,
+.services-container h8,
+.services-container h9,
+.services-container h10 {
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

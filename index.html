@@ -11,6 +11,7 @@
     <!-- Favicon -->
 
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,36 +48,31 @@
         <span class="sr-only">Načítava sa...</span>
     </div>
 </div>
-<div class="language-switcher">
-    <button id="skBtn" class="btn">Slovenčina</button>
-    <button id="ruBtn" class="btn">Русский</button>
-    <button id="ukBtn" class="btn">Українська</button>
-    <button id="enBtn" class="btn">English</button>
-</div>
-<!-- Spinner Koniec -->
-
-
 <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
-    <div class="row gx-0">
-        <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-
+    <div class="header-container">
+        <div class="language-switcher">
+            <button id="skBtn" class="btn">Slovenčina</button>
+            <button id="ruBtn" class="btn">Русский</button>
+            <button id="ukBtn" class="btn">Українська</button>
+            <button id="enBtn" class="btn">English</button>
         </div>
-        <div class="col-md-6 text-center text-lg-end">
-            <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-                <div class="me-3 pe-3 border-end py-2">
-                    <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
-                </div>
-                <div class="py-2">
-                    <p class="m-0">
-                        <i class="fa fa-phone-alt me-2"></i>
-                        <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
-                    </p>
-                </div>
-
+        <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+            <div class="me-3 pe-3 border-end py-2">
+                <p class="m-0">
+                    <i class="fa fa-envelope-open me-2"></i>
+                    <a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a>
+                </p>
+            </div>
+            <div class="py-2">
+                <p class="m-0">
+                    <i class="fa fa-phone-alt me-2"></i>
+                    <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
+                </p>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Horný panel Koniec -->
 
@@ -116,7 +112,9 @@
             </div>
             <div class="modal-body d-flex align-items-center justify-content-center">
                 <div class="input-group" style="max-width: 600px;">
-                    <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Napíšte hľadané slovo">
+                    <label>
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Napíšte hľadané slovo">
+                    </label>
                 </div>
             </div>
         </div>
@@ -134,8 +132,8 @@
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
 
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
-                        <a href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
+                        <h1 id="acute_patients" class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
+                        <a id="call_us" href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
                             Zavolajte nám
                         </a>
 
@@ -147,8 +145,8 @@
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
 
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
-                        <a href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
+                        <h1 id="acute_patients1" class="display-1 text-white mb-md-4 animated zoomIn">OŠETRUJEME AJ AKÚTNYCH PACIENTOV, KTORI NIE SÚ DOTERAZ V NAŠEJ EVIDENCII. ZAVOLAJTE A DOHODNIEME SA O TERMÍN</h1>
+                        <a id="call_us1" href="tel:+421 948 771 757" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">
                             Zavolajte nám
                         </a>
                     </div>
@@ -272,17 +270,17 @@
 
     <div class="service-card">
         <i class="fas fa-lungs service-icon"></i>
-        <h9>𝑫𝒊𝒂𝒈𝒏𝒐𝒔𝒕𝒊𝒌𝒂</h9>
+        <h9 id="titlediagnostika">𝑫𝒊𝒂𝒈𝒏𝒐𝒔𝒕𝒊𝒌𝒂</h9>
         <ul>
-            <li>Intraoralny röntgen</li>
+            <li id="listdiagnostika1">Intraoralny röntgen</li>
         </ul>
     </div>
 
     <div class="service-card">
         <i class="fas fa-briefcase-medical service-icon"></i>
-        <h10>𝑵Ú𝑫𝒁𝑶𝑽Á 𝑷𝑶𝑴𝑶𝑪</h10>
+        <h10 id="titlehelpfirst" >𝑵Ú𝑫𝒁𝑶𝑽Á 𝑷𝑶𝑴𝑶𝑪</h10>
         <ul>
-            <li>Akutne a bolestivé pripady osetrujeme po telefonickom dohodnutí</li>
+            <li id="listhelpfirst">Akutne a bolestivé pripady osetrujeme po telefonickom dohodnutí</li>
         </ul>
     </div>
 </div>
@@ -290,11 +288,6 @@
 
 <!-- Service End -->
 
-<!-- Pricing Start -->
-
-<!-- Pricing End -->
-
-<!-- Testimonial Start -->
 <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row justify-content-center">
@@ -302,37 +295,25 @@
                 <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                     <div class="testimonial-item text-center text-white">
                         <img class="img-fluid mx-auto rounded mb-4" src="img/rewies.jpg" alt="">
-                        <p class="fs-5">Dr. Dinara je vynikajúci zubár! Od chvíle, keď som prišiel, celý tím som sa cítil vítaný a pohodlný. Pozornosť doktorky Dinary na detail a jemný prístup ma upokojili a skutočne som ocenil, ako dôkladne vysvetlila každý krok mojej liečby. Výsledky sú neuveriteľné – môžem úprimne povedať, že som sa s úsmevom nikdy necítil sebavedomejšie. Ďakujem vám, Dr. Dinara, za vašu výnimočnú starostlivosť a profesionalitu</p>
+                        <p id="coments1" class="fs-5">Dr. Dinara je vynikajúci zubár! Od chvíle, keď som prišiel, celý tím som sa cítil vítaný a pohodlný. Pozornosť doktorky Dinary na detail a jemný prístup ma upokojili a skutočne som ocenil, ako dôkladne vysvetlila každý krok mojej liečby. Výsledky sú neuveriteľné – môžem úprimne povedať, že som sa s úsmevom nikdy necítil sebavedomejšie. Ďakujem vám, Dr. Dinara, za vašu výnimočnú starostlivosť a profesionalitu</p>
                         <hr class="mx-auto w-25">
                         <h4 class="text-white mb-0">Taras Iasko</h4>
                     </div>
+
                     <div class="testimonial-item text-center text-white">
-                        <img class="img-fluid mx-auto rounded mb-4" src="img/rewies.jpg" alt="">
-                        <p class="fs-5">Dr. Dinara je vynikajúci zubár! Od chvíle, keď som prišiel, celý tím som sa cítil vítaný a pohodlný. Pozornosť doktorky Dinary na detail a jemný prístup ma upokojili a skutočne som ocenil, ako dôkladne vysvetlila každý krok mojej liečby. Výsledky sú neuveriteľné – môžem úprimne povedať, že som sa s úsmevom nikdy necítil sebavedomejšie. Ďakujem vám, Dr. Dinara, za vašu výnimočnú starostlivosť a profesionalitu</p>
-                        <hr class="mx-auto w-25">
-                        <h4 class="text-white mb-0">Danko </h4>
-                    </div>
-                    <div class="testimonial-item text-center text-white">
-                        <img class="img-fluid mx-auto rounded mb-4" src="img/rewies.jpg" alt="">
-                        <p class="fs-5">Chcela by som touto cestou, poďakovať pani Dr.,o jej prístup a postup pri ošetrovaní. Robi všetko preto, aby pacienti boli spokojní . Ďakujem  a možem len odporúčať.
-                            </p>
-                        <hr class="mx-auto w-25">
-                        <h4 class="text-white mb-0">Simona Vidová</h4>
-                    </div>
-                    <div class="testimonial-item text-center text-white">
-                        <img class="img-fluid mx-auto rounded mb-4" src="img/rewies.jpg" alt="">
-                        <p class="fs-5">Začnem takto, bál som sa zubárov celý život, ale po prvom sedení, to zo mňa všetko odpadlo a následne som chodil bez strachu a stresu. Prístup 10 z 10 ako od pani zubarky tak aj zo strany pani sestričky, kvalita 10 z 10, prostredie 10 z 10 a vďaka vám mám americký super úsmev 🙏😊
-                            Taktiež je úplne super to, že vykonávajú svoju prácu v prípade potreby aj cez víkend👍
-                            Odporúčam každému kto váha, alebo hľadá super zubára, maximálna spokojnosť a ďakujem 😊
-                        </p>
-                        <hr class="mx-auto w-25">
-                        <h4 class="text-white mb-0">Milan Mesároš</h4>
+                        <img class="img-fluid mx-auto rounded mb-5" src="img/rewies.jpg" alt="">
+                        <p id="coments2"  class="fs-6">Začnem takto, bál som sa zubárov celý život, ale po prvom sedení, to zo mňa všetko odpadlo a následne som chodil bez strachu a stresu. Prístup 10 z 10 ako od pani zubarky tak aj zo strany pani sestričky, kvalita 10 z 10, prostredie 10 z 10 a vďaka vám mám americký super úsmev 🙏😊 Taktiež je úplne super to, že vykonávajú svoju prácu v prípade potreby aj cez víkend👍 Odporúčam každému kto váha, alebo hľadá super zubára, maximálna spokojnosť a ďakujem 😊</p>
+                        <hr class="mx-auto w-26">
+                        <h4 class="text-white mb-1">Milan Mesároš</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <!-- Testimonial End -->
 
 <!-- Team Start -->
@@ -345,8 +326,8 @@
                         <img class="img-fluid rounded-circle" src="img/img_10.png" alt="Dr. Dina Bruso">
                     </div>
                     <div class="team-text bg-light text-center rounded-bottom p-4 pt-5">
-                        <h4 class="mb-2">Dr. Dinara Bruso</h4>
-                        <p class="text-primary mb-0">Zubárka</p>
+                        <h4 id="doctor_name">Dr. Dinara Bruso</h4>
+                        <p id="profession" class="text-primary mb-0">Zubárka</p>
                     </div>
                 </div>
             </div>
@@ -362,39 +343,36 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><strong>🦷 Prax:</strong> 10 rokov</p>
+                <p id="experience" > <strong>🦷 Prax:</strong> 10 rokov</p>
 
-                <p><strong>📜 Vzdelanie:</strong></p>
+                <p id="education1" >  <strong>📜 Vzdelanie:</strong></p>
                 <ul>
-                    <li>2005 – ukončenie strednej školy</li>
-                    <li>2007 – ukončenie štúdia zubného technika</li>
-                    <li>2012 – diplom z terapeutickej stomatológie (<strong>Užhorodská národná univerzita</strong>)</li>
-                    <li>2022 – špecializácia v dentoalveolárnej chirurgii (<strong>Univerzita Pavla Jozefa Šafárika v Košiciach</strong>)</li>
+                    <!-- Сюда будет добавляться список образования -->
                 </ul>
 
-                <p><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
+                <p id="why_choose_us_title" ><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
                 <ul>
-                    <li>🦷 Moderné technológie a inovatívne metódy liečby</li>
-                    <li>👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
-                    <li>💉 Bezbolestné a komfortné zákroky</li>
-                    <li>🏅 Viac ako 10 rokov skúseností v stomatológii</li>
+                    <li id="why_choose_us1">🦷 Moderné technológie a inovatívne metódy liečby</li>
+                    <li id="why_choose_us2">👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
+                    <li id="why_choose_us3">💉 Bezbolestné a komfortné zákroky</li>
+                    <li id="why_choose_us4">🏅 Viac ako 10 rokov skúseností v stomatológii</li>
                 </ul>
 
-                <p><strong>🏆 Certifikáty a odborné školenia:</strong></p>
+                <p id="certificat"><strong>🏆 Certifikáty a odborné školenia:</strong></p>
                 <div class="cert-carousel">
                     <div class="cert-item">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#certModal1">
-                            <img src="certificate1_small.jpg" alt="Certifikát 1">
+                            <img src="img/certificat1.jpg" alt="Certifikát 1">
                         </a>
                     </div>
                     <div class="cert-item">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#certModal2">
-                            <img src="certificate2_small.jpg" alt="Certifikát 2">
+                            <img src="img/certificate2.jpg" alt="Certifikát 2">
                         </a>
                     </div>
                     <div class="cert-item">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#certModal3">
-                            <img src="certificate3_small.jpg" alt="Certifikát 3">
+                            <img src="img/certificat4.jpg" alt="Certifikát 3">
                         </a>
                     </div>
                 </div>
@@ -402,6 +380,7 @@
         </div>
     </div>
 </div>
+
 
 
 <!-- Модальные окна для полноразмерных сертификатов -->
@@ -413,7 +392,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="img/img_11.png" class="img-fluid" alt="Certifikát 1">
+                <img src="img/certificat1.jpg" class="img-fluid" alt="Certifikát 1">
             </div>
         </div>
     </div>
@@ -427,7 +406,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="certificate2_large.jpg" class="img-fluid" alt="Certifikát 2">
+                <img src="img/certificate2.jpg" class="img-fluid" alt="Certifikát 2">
             </div>
         </div>
     </div>
@@ -441,7 +420,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="certificate3_large.jpg" class="img-fluid" alt="Certifikát 3">
+                <img src="img/certificat4.jpg" class="img-fluid" alt="Certifikát 3">
             </div>
         </div>
     </div>
@@ -459,7 +438,7 @@
     <div class="container pt-5">
         <div class="row g-5 pt-4">
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Rýchle odkazy</h3>
+                <h3 id="quick_links" class="text-white mb-4">Rýchle odkazy</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Domov</a>
                     <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>O nás</a>
@@ -469,7 +448,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Populárne odkazy</h3>
+                <h3 id="popular_links" class="text-white mb-4">Populárne odkazy</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Domov</a>
                     <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>O nás</a>
@@ -479,9 +458,9 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Kontaktujte nás</h3>
+                <h3 id="contact_us" class="text-white mb-4">Kontaktujte nás</h3>
                 <p class="mb-2">
-                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                    <i  class="bi bi-geo-alt text-primary me-2"></i>
                     A2-B, 2 poschodia, Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko
                 </p>
                 <p class="mb-2">
@@ -495,7 +474,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Sledujte nás</h3>
+                <h3 id="follow_us" class="text-white mb-4">Sledujte nás</h3>
                 <div class="d-flex">
                     <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank">
                         <i class="fab fa-facebook-f fw-normal"></i>
@@ -543,6 +522,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 <script src="js/translete.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
