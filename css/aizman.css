@@ -315,22 +315,10 @@ body {
 }
 
 /* Блок с языками */
-.language-switcher {
-    display: flex;
-    gap: 10px; /* Чуть больше расстояние между кнопками */
-    align-items: center;
-}
+
 
 /* Кнопки языков */
-.language-switcher .btn {
-    background-color: #007bff; /* Синий цвет */
-    color: white;
-    border: none;
-    padding: 5px 14px;
-    font-size: 14px;
-    border-radius: 15px; /* Чуть менее скругленные углы */
-    transition: all 0.3s ease;
-}
+
 
 .language-switcher .btn:hover {
     background-color: #0056b3;
