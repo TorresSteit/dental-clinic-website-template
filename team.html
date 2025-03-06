@@ -8,8 +8,7 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
     <link href="css/aizman.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,15 +45,6 @@
             <span class="sr-only">Načítava sa...</span>
         </div>
     </div>
-    <div class="language-switcher">
-        <button id="skBtn" class="btn">Slovenčina</button>
-        <button id="ruBtn" class="btn">Русский</button>
-        <button id="ukBtn" class="btn">Українська</button>
-        <button id="enBtn" class="btn">English</button>
-    </div>
-    <!-- Spinner Koniec -->
-
-
     <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
@@ -63,11 +53,11 @@
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
+                        <p class="m-0"><i class="bi bi-envelope"></i><a href="mailto:Dinadent2022@gmail.com" class="text-decoration-none text-dark">Dinadent2022@gmail.com</a></p>
                     </div>
                     <div class="py-2">
                         <p class="m-0">
-                            <i class="fa fa-phone-alt me-2"></i>
+                            <i class="bi bi-telephone"></i>
                             <a href="tel:+421948771757" class="text-dark text-decoration-none">+421 948 771 757</a>
                         </p>
                     </div>
@@ -114,7 +104,9 @@
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <label>
+                            <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        </label>
                         <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
@@ -164,39 +156,39 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p><strong>🦷 Prax:</strong> 10 rokov</p>
+                    <p id="experience"> <strong>🦷 Prax:</strong> 10 rokov</p>
 
-                    <p><strong>📜 Vzdelanie:</strong></p>
+                    <p id="education1"> <strong>📜 Vzdelanie:</strong></p>
                     <ul>
-                        <li>2005 – ukončenie strednej školy</li>
-                        <li>2007 – ukončenie štúdia zubného technika</li>
-                        <li>2012 – diplom z terapeutickej stomatológie (<strong>Užhorodská národná univerzita</strong>)</li>
-                        <li>2022 – špecializácia v dentoalveolárnej chirurgii (<strong>Univerzita Pavla Jozefa Šafárika v Košiciach</strong>)</li>
+                        <li>🎓 2005 - Ukončenie strednej školy</li>
+                        <li>🦷 2007 - Diplom zubného technika</li>
+                        <li>🏥 2012 - Diplom z terapeutickej stomatológie, Užhorodská národná univerzita</li>
+                        <li>🔬 2022 - Špecializácia na dentoalveolárnu chirurgiu, Univerzita Pavla Jozefa Šafárika v Košiciach</li>
                     </ul>
 
-                    <p><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
+                    <p id="why_choose_us_title"><strong>💙 Prečo si pacienti vyberajú nás?</strong></p>
                     <ul>
-                        <li>🦷 Moderné technológie a inovatívne metódy liečby</li>
-                        <li>👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
-                        <li>💉 Bezbolestné a komfortné zákroky</li>
-                        <li>🏅 Viac ako 10 rokov skúseností v stomatológii</li>
+                        <li id="why_choose_us1">🦷 Moderné technológie a inovatívne metódy liečby</li>
+                        <li id="why_choose_us2">👩‍⚕️ Individuálny prístup ku každému pacientovi</li>
+                        <li id="why_choose_us3">💉 Bezbolestné a komfortné zákroky</li>
+                        <li id="why_choose_us4">🏅 Viac ako 10 rokov skúseností v stomatológii</li>
                     </ul>
 
-                    <p><strong>🏆 Certifikáty a odborné školenia:</strong></p>
+                    <p id="certificat"><strong>🏆 Certifikáty a odborné školenia:</strong></p>
                     <div class="cert-carousel">
                         <div class="cert-item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#certModal1">
-                                <img src="certificate1_small.jpg" alt="Certifikát 1">
+                                <img src="img/certificat1.jpg" alt="Certifikát 1">
                             </a>
                         </div>
                         <div class="cert-item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#certModal2">
-                                <img src="certificate2_small.jpg" alt="Certifikát 2">
+                                <img src="img/certificate2.jpg" alt="Certifikát 2">
                             </a>
                         </div>
                         <div class="cert-item">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#certModal3">
-                                <img src="certificate3_small.jpg" alt="Certifikát 3">
+                                <img src="img/certificat4.jpg" alt="Certifikát 3">
                             </a>
                         </div>
                     </div>
@@ -204,6 +196,8 @@
             </div>
         </div>
     </div>
+
+
 
 
     <!-- Модальные окна для полноразмерных сертификатов -->
@@ -215,7 +209,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="img/certificat2.jpg" class="img-fluid" alt="Certifikát 1">
+                    <img src="img/certificat1.jpg" class="img-fluid" alt="Certifikát 1">
                 </div>
             </div>
         </div>
@@ -229,7 +223,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="certificate2_large.jpg" class="img-fluid" alt="Certifikát 2">
+                    <img src="img/certificate2.jpg" class="img-fluid" alt="Certifikát 2">
                 </div>
             </div>
         </div>
@@ -243,7 +237,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="certificate3_large.jpg" class="img-fluid" alt="Certifikát 3">
+                    <img src="img/certificat4.jpg" class="img-fluid" alt="Certifikát 3">
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
 .navbar {
     background-color: #0077b6; /* Цвет полосы (изменяемый) */
     padding: 15px 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -36,7 +36,7 @@
 .nav-item.dropdown .dropdown-menu {
     background-color: white;
     border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .narrow-block {
@@ -78,17 +78,15 @@ body {
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 .price-container {
     font-family: "Poppins", sans-serif; /* Стильный и современный шрифт */
     max-width: 800px;
-    margin: 20px auto;
     background: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 80px; /* Отступ перед футером */
+    /* Отступ перед футером */
+    margin: 20px auto 80px;
 }
 
 .section-title {
@@ -175,8 +173,7 @@ body {
 /* Карточка услуги */
 .service-card {
     background: white;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 20px 20px 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -293,17 +290,8 @@ body {
     transform: scale(1.1);
 }
 /* CSS для плавной анимации текста */
-.testimonial-item p {
-    transition: opacity 0.5s ease-in-out;
-}
 
-.testimonial-item p.hidden {
-    opacity: 0;
-}
-.hidden {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
+
 /* Контейнер для шапки */
 .header-container {
     display: flex;
@@ -365,6 +353,9 @@ body {
 h1#acute_patients1 {
     font-size: 2.5rem; /* Или другой подходящий размер */
 }
+h1#acute_patients2 {
+    font-size: 2.5rem;
+}
 .services-container h3,
 .services-container h4,
 .services-container h7,
@@ -376,11 +367,65 @@ h1#acute_patients1 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+ .position-absolute {
+     margin-bottom: 500px;
+ }
+.testimonial-item {
+    background: rgba(0, 0, 0, 0.6); /* Тёмный фон с прозрачностью */
+    padding: 20px;
+    border-radius: 10px;
+}
+.testimonial-item img {
+    width: 120px; /* Размер фото */
+    height: 120px;
+    object-fit: cover;
+}
+.testimonial-item p {
+    font-size: 16px; /* Читаемый размер */
+    line-height: 1.5;
+}
 
+.testimonial-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.testimonial-item {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: #007bff;
+    border-radius: 10px;
+}
+.testimonial-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto 100px auto;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
-
-
-
+.container {
+    margin-bottom: 100px; /* Увеличить расстояние снизу */
+}
 
 
 
