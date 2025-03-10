@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 .navbar {
-    background-color: #f8f4f4; /* Цвет полосы (изменяемый) */
+    background-color: #0077b6; /* Цвет полосы (изменяемый) */
     padding: 15px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -428,6 +428,57 @@ h1#acute_patients2 {
 }
 
 
+/* Фон и стиль навигационной панели */
+.navbar {
+    background-color: #0077b6; /* Цвет полосы */
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для панели */
+}
+
+/* Стили для кнопки бургера */
+.navbar-toggler {
+    border: none; /* Убираем рамку */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Белая иконка бургера */
+}
+
+/* Скрыть иконку бургера на больших экранах (ПК и планшетах) */
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none; /* Скрыть кнопку бургера */
+    }
+}
+
+/* Стили для элементов меню */
+.navbar-nav .nav-link {
+    color: white; /* Белый цвет для текста */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Цвет при наведении */
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    background-color: #0077b6; /* Темный фон выпадающего меню */
+}
+
+.dropdown-item {
+    color: #0088ff; /* Белый цвет для текста в меню */
+}
+
+.dropdown-item:hover {
+    background-color: #005f73; /* Цвет фона при наведении на элементы меню */
+}
+
+/* Стили для иконки бургера только на мобильных устройствах */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        display: block; /* Показываем кнопку бургера на мобильных устройствах */
+    }
+}
 
 
 
