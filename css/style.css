@@ -407,53 +407,35 @@ h6,
         padding: 6px 16px;
     }
 }
-/* Стили для мобильного меню */
-.mobile-menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
-    background: #fff;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1050;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.mobile-menu-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.mobile-menu-content a {
-    font-size: 20px;
-    color: #333;
-    text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.close-mobile-menu {
-    font-size: 24px;
-    cursor: pointer;
-    text-align: right;
-    display: block;
-    margin-bottom: 20px;
-}
-
-/* Отображаем гамбургер только на мобильных устройствах */
-@media (max-width: 992px) {
-    .custom-toggler {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
+/* Изменение фона только на мобильных устройствах */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #343a40; /* темный фон для мобильных устройств */
     }
 
-    .navbar-collapse {
-        display: none;
+    .navbar-toggler-icon {
+        background-color: white; /* Белая иконка бургера */
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff; /* Белый текст для ссылок */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa; /* Цвет текста при наведении */
+    }
+
+    .dropdown-menu {
+        background-color: #343a40; /* Темный фон для выпадающего меню */
+    }
+
+    .dropdown-item {
+        color: #fff; /* Белый текст для выпадающих элементов */
+    }
+
+    .dropdown-item:hover {
+        background-color: #495057; /* Цвет фона при наведении */
     }
 }
+
+

@@ -108,24 +108,15 @@
 
 })(jQuery);
 document.addEventListener("DOMContentLoaded", function () {
-    let mobileMenuButton = document.querySelector(".custom-toggler");
-    let mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
-    let closeMobileMenu = document.querySelector(".close-mobile-menu");
+    let navbarToggler = document.querySelector(".navbar-toggler");
+    let navbarCollapse = document.getElementById("navbarCollapse");
 
-    mobileMenuButton.addEventListener("click", function () {
-        mobileMenuOverlay.style.display = "block";
-    });
-
-    closeMobileMenu.addEventListener("click", function () {
-        mobileMenuOverlay.style.display = "none";
-    });
-
-    mobileMenuOverlay.addEventListener("click", function (event) {
-        if (event.target === mobileMenuOverlay) {
-            mobileMenuOverlay.style.display = "none";
-        }
+    navbarToggler.addEventListener("click", function () {
+        navbarCollapse.classList.toggle("show");
+        document.body.classList.toggle("overflow-hidden");
     });
 });
+
 
 
 
