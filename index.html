@@ -86,7 +86,9 @@
             <a href="about.html" class="nav-item nav-link">O nás</a>
             <a href="service.html" class="nav-item nav-link">Služby</a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Stránky</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-toggle="tooltip" title="Kliknite sem pre zobrazenie stránok">
+                    Stránky
+                </a>
                 <div class="dropdown-menu">
                     <a href="price.html" class="dropdown-item">Cenník</a>
                     <a href="team.html" class="dropdown-item">Náš tím</a>
@@ -97,6 +99,15 @@
         </div>
     </div>
 </nav>
+
+<!-- Фоновый слой меню -->
+<div class="menu-overlay" id="menuOverlay">
+    <div class="menu-content">
+        <span class="close-menu">✖</span>
+        <p>Kliknite sem pre zatvorenie</p>
+    </div>
+</div>
+
 <!-- Navigácia Koniec -->
 
 
@@ -327,7 +338,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper('.swiper', {
+    const  swiper = new Swiper('.swiper', {
         loop: true,
         pagination: {
             el: '.swiper-pagination',

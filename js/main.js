@@ -107,4 +107,25 @@
 
 
 })(jQuery);
+document.addEventListener("DOMContentLoaded", function () {
+    let menuButton = document.querySelector(".navbar-toggler");
+    let menuOverlay = document.getElementById("menuOverlay");
+    let closeMenu = document.querySelector(".close-menu");
+
+    menuButton.addEventListener("click", function () {
+        menuOverlay.classList.add("show");
+    });
+
+    closeMenu.addEventListener("click", function () {
+        menuOverlay.classList.remove("show");
+    });
+
+    menuOverlay.addEventListener("click", function (e) {
+        if (e.target === menuOverlay) {
+            menuOverlay.classList.remove("show");
+        }
+    });
+});
+
+
 
