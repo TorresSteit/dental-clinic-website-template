@@ -108,21 +108,21 @@
 
 })(jQuery);
 document.addEventListener("DOMContentLoaded", function () {
-    let menuButton = document.querySelector(".navbar-toggler");
-    let menuOverlay = document.getElementById("menuOverlay");
-    let closeMenu = document.querySelector(".close-menu");
+    let mobileMenuButton = document.querySelector(".custom-toggler");
+    let mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+    let closeMobileMenu = document.querySelector(".close-mobile-menu");
 
-    menuButton.addEventListener("click", function () {
-        menuOverlay.classList.add("show");
+    mobileMenuButton.addEventListener("click", function () {
+        mobileMenuOverlay.style.display = "block";
     });
 
-    closeMenu.addEventListener("click", function () {
-        menuOverlay.classList.remove("show");
+    closeMobileMenu.addEventListener("click", function () {
+        mobileMenuOverlay.style.display = "none";
     });
 
-    menuOverlay.addEventListener("click", function (e) {
-        if (e.target === menuOverlay) {
-            menuOverlay.classList.remove("show");
+    mobileMenuOverlay.addEventListener("click", function (event) {
+        if (event.target === mobileMenuOverlay) {
+            mobileMenuOverlay.style.display = "none";
         }
     });
 });
