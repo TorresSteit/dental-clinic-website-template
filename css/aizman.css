@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 .navbar {
-    background-color: #0077b6; /* Цвет полосы (изменяемый) */
+    background-color: #ffffff; /* Цвет полосы (изменяемый) */
     padding: 15px 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

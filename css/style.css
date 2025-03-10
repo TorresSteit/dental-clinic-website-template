@@ -407,35 +407,5 @@ h6,
         padding: 6px 16px;
     }
 }
-/* Изменение фона только на мобильных устройствах */
-@media (max-width: 768px) {
-    .navbar {
-        background-color: #343a40; /* темный фон для мобильных устройств */
-    }
-
-    .navbar-toggler-icon {
-        background-color: white; /* Белая иконка бургера */
-    }
-
-    .navbar-nav .nav-link {
-        color: #fff; /* Белый текст для ссылок */
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: #f8f9fa; /* Цвет текста при наведении */
-    }
-
-    .dropdown-menu {
-        background-color: #343a40; /* Темный фон для выпадающего меню */
-    }
-
-    .dropdown-item {
-        color: #fff; /* Белый текст для выпадающих элементов */
-    }
-
-    .dropdown-item:hover {
-        background-color: #495057; /* Цвет фона при наведении */
-    }
-}
 
 
