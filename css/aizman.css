@@ -1,4 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap');
 
 .navbar {
     background-color: #0077b6; /* Цвет полосы (изменяемый) */
@@ -161,24 +163,29 @@ body {
 }
 
 
+
+/* Общий стиль для страницы */
+
+
+/* Контейнер для услуг */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Всегда 4 карточки в ряд */
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
     gap: 20px;
-    width: 100vw; /* Растягиваем на всю ширину экрана */
     padding: 20px;
-    margin: 0;
+    margin: 0 auto;
+    width: 90%;
 }
 
 /* Карточка услуги */
 .service-card {
-    background: white;
-    padding: 20px 20px 40px;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 200px;
-    margin-top: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 100px;
 }
 
 .service-card:hover {
@@ -193,12 +200,12 @@ body {
     margin-bottom: 10px;
 }
 
-/* Заголовок */
-.service-card h3 {
+/* Заголовки */
+.service-card h3, .service-cardh2 .service-card h5, .service-card h10 {
     font-size: 20px;
+    font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 /* Список услуг */
@@ -215,6 +222,7 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+/* Убираем нижнюю границу у последнего элемента */
 .service-card ul li:last-child {
     border-bottom: none;
 }
@@ -222,21 +230,24 @@ body {
 /* Адаптивность */
 @media (max-width: 1200px) {
     .services-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 колонки на средних экранах */
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на экранах до 1200px */
     }
 }
 
 @media (max-width: 900px) {
     .services-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на экранах до 900px */
     }
 }
 
 @media (max-width: 600px) {
     .services-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 колонка на телефонах */
+        grid-template-columns: 1fr; /* 1 колонка на экранах до 600px */
     }
 }
+
+
+
 
 .image-container {
     width: 250px; /* Размер фото */
@@ -350,12 +361,60 @@ body {
         text-align: center;
     }
 }
-h1#acute_patients1 {
-    font-size: 2.5rem; /* Или другой подходящий размер */
+h1 {
+    font-size: 5vw; /* Шрифт будет меняться в зависимости от ширины экрана */
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-h1#acute_patients2 {
-    font-size: 2.5rem;
+
+h2 {
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
 }
+
+/* Текст карусели */
+.carousel-caption h1 {
+    font-size: 4vw; /* Заголовки в карусели адаптируются */
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Кнопки */
+.btn-primary {
+    font-size: 1.5vw; /* Размер кнопки адаптивный */
+    font-weight: 500;
+    border-radius: 8px;
+    background: #007bff;
+    transition: 0.3s;
+    padding: 1vw 2vw;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    .carousel-caption h1 {
+        font-size: 5vw;
+    }
+
+    .btn-primary {
+        font-size: 3vw;
+        padding: 2vw 3vw;
+    }
+}
+.services-container h2,
 .services-container h3,
 .services-container h4,
 .services-container h7,
@@ -440,45 +499,41 @@ h1#acute_patients2 {
     border: none; /* Убираем рамку */
 }
 
-.navbar-toggler-icon {
-    background-color: white; /* Белая иконка бургера */
+
+
+/* Стили для кнопки бургера */
+.navbar-toggler {
+    background-color: transparent; /* Убираем фон */
+    border: none; /* Убираем рамку */
+    width: 40px; /* Устанавливаем ширину */
+    height: 40px; /* Устанавливаем высоту */
+    background-image: url('https://img.icons8.com/?size=100&id=30UIOfuJpZnZ&format=png&color=000000'); /* Устанавливаем иконку как фоновое изображение */
+    background-size: contain; /* Чтобы иконка подстраивалась по размеру */
+    background-repeat: no-repeat; /* Убираем повторение изображения */
 }
 
-/* Скрыть иконку бургера на больших экранах (ПК и планшетах) */
-@media (min-width: 768px) {
-    .navbar-toggler {
-        display: none; /* Скрыть кнопку бургера */
-    }
-}
-
-/* Стили для элементов меню */
-.navbar-nav .nav-link {
-    color: white; /* Белый цвет для текста */
-}
-
-.navbar-nav .nav-link:hover {
-    color: #ffdd57; /* Цвет при наведении */
-}
-
-/* Стили для выпадающего меню */
-.dropdown-menu {
-    background-color: #0077b6; /* Темный фон выпадающего меню */
-}
-
-.dropdown-item {
-    color: #0088ff; /* Белый цвет для текста в меню */
-}
-
-.dropdown-item:hover {
-    background-color: #005f73; /* Цвет фона при наведении на элементы меню */
-}
-
-/* Стили для иконки бургера только на мобильных устройствах */
+/* Стили для кнопки бургера на мобильных устройствах */
 @media (max-width: 767px) {
     .navbar-toggler {
         display: block; /* Показываем кнопку бургера на мобильных устройствах */
     }
 }
+
+
+
+h3 {
+    font-style: italic;
+}
+/* Скрыть кнопку на странице team.html */
+
+
+
+
+
+
+
+
+
 
 
 

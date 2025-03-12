@@ -73,7 +73,6 @@
     <!-- Horný panel Koniec -->
 
 
-    <!-- Navigácia Začiatok -->
     <nav class="navbar navbar-expand-lg">
         <a href="index.html" class="navbar-brand"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -84,17 +83,13 @@
                 <a href="index.html" class="nav-item nav-link active">Domov</a>
                 <a href="about.html" class="nav-item nav-link">O nás</a>
                 <a href="service.html" class="nav-item nav-link">Služby</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Stránky</a>
-                    <div class="dropdown-menu">
-                        <a href="price.html" class="dropdown-item">Cenník</a>
-                        <a href="team.html" class="dropdown-item">Náš tím</a>
-                        <a href="testimonial.html" class="dropdown-item">Recenzie</a>
-                    </div>
-                </div>
+                <a href="price.html" class="nav-item nav-link">Cenník</a>
+                <a href="team.html" class="nav-item nav-link">Náš tím</a>
+                <a href="testimonial.html" class="nav-item nav-link">Recenzie</a> <!-- Закрывающая кавычка добавлена здесь -->
                 <a href="contact.html" class="nav-item nav-link">Kontakt</a>
             </div>
         </div>
+
     </nav>
     <!-- Navbar End -->
 
@@ -201,7 +196,7 @@
         <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Rýchle odkazy</h3>
+                    <h3 id="quick_links" class="text-white mb-4">Rýchle odkazy</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Domov</a>
                         <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>O nás</a>
@@ -211,7 +206,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Populárne odkazy</h3>
+                    <h3 id="popular_links" class="text-white mb-4">Populárne odkazy</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Domov</a>
                         <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>O nás</a>
@@ -221,9 +216,9 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Kontaktujte nás</h3>
+                    <h3 id="contact_us" class="text-white mb-4">Kontaktujte nás</h3>
                     <p class="mb-2">
-                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        <i  class="bi bi-geo-alt text-primary me-2"></i>
                         A2-B, 2 poschodia, Piešťanská 3 business centrum Aquapoli, Trnava, Slovensko
                     </p>
                     <p class="mb-2">
@@ -237,7 +232,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Sledujte nás</h3>
+                    <h3 id="follow_us" class="text-white mb-4">Sledujte nás</h3>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/share/15u4XgkwvT/?mibextid=wwXIfr" target="_blank">
                             <i class="fab fa-facebook-f fw-normal"></i>

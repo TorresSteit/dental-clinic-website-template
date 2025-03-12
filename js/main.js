@@ -107,15 +107,10 @@
 
 
 })(jQuery);
-document.addEventListener("DOMContentLoaded", function () {
-    let navbarToggler = document.querySelector(".navbar-toggler");
-    let navbarCollapse = document.getElementById("navbarCollapse");
 
-    navbarToggler.addEventListener("click", function () {
-        navbarCollapse.classList.toggle("show");
-        document.body.classList.toggle("overflow-hidden");
-    });
-});
+
+
+
 
 
 
