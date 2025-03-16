@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dina-dent.com/sitemap.xml
