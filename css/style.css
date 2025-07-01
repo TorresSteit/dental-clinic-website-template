@@ -125,14 +125,30 @@ h6,
     }
 }
 
+/* Секция слайдера без затемнения */
 .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .85);
+    background: none;
     z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2rem;
+    text-align: center;
 }
+
+
+
+
+
+/* Фон под самим текстом */
+
+
+
+
 
 @media (max-width: 576px) {
     .carousel-caption h5 {
